@@ -1,3 +1,4 @@
+// insertion in the begning 
 public class LinkLL2
 {
     class Node
