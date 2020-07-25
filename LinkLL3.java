@@ -41,16 +41,16 @@ public class LinkLL3
     }
 
 
-//    void show()
-//    {
-//        Node temp = head;
-//        while(temp.next!=null)
-//        {
-//            System.out.print(temp.data + " ");
-//            temp=temp.next;
-//        }
-//        System.out.print(temp.data+"          ");
-//    }
+   void show()
+   {
+       Node temp = head;
+       while(temp.next!=null)
+       {
+           System.out.print(temp.data + " ");
+           temp=temp.next;
+       }
+       System.out.print(temp.data+"          ");
+   }
 
     boolean check(int pp)
     {
@@ -77,7 +77,7 @@ public class LinkLL3
         linkll.insert(115);
         linkll.insert(120);
         linkll.insert(125);
-   //linkll.show
+   linkll.show();
         Scanner sc=new Scanner(System.in);
 
 
