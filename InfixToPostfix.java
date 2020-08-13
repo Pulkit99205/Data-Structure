@@ -5,9 +5,9 @@ class stack2 {
         int flag = 4444;
         if (ch == '+' || ch == '-')
             flag = 1;
-        else if (ch == '^')
-            flag = 2;
         else if (ch == '*' || ch == '/')
+            flag = 2;
+        else if (ch == '^')
             flag = 3;
         else
             flag = -1;
@@ -21,7 +21,7 @@ class stack2 {
             char ch = pp.charAt(i);
 
             if (prec(ch) > 0) {
-                while (!stack.isEmpty() && prec(stack.peek())>prec(ch)) {
+                while (!stack.isEmpty() && prec(stack.peek())>=prec(ch)) {
                     returnwali += stack.pop();
                 }
                 stack.push(ch);
